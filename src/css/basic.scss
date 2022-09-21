@@ -1,0 +1,73 @@
+$main-color :#032777;
+// root말고 scss에서는 이렇게 사용
+$c-g : #dddddd;
+$font-small: 14px;
+$font-medium: 17px;
+$font-large: 20px;
+
+body {
+    overflow-x: hidden;
+}
+
+.Wrapper {
+    min-width: 1170px;
+    // 반응형 할 때 고쳐줘야하는 단점
+}
+
+.inner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.Header {
+    .top_bar {
+        border-bottom: 1px solid $c-g;
+        font-size: $font-small;
+
+        .inner {
+            justify-content: flex-end;
+            line-height: 30px;
+
+            li {
+                border-right: 1px solid $main-color;
+                padding: 0 5px;
+            }
+
+
+        }
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            gap: 50px;
+            line-height: 90px;
+            font-size: $font-large;
+            font-weight: 500;
+        }
+
+        a {
+            position: relative;
+            display: block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background: $main-color;
+            }
+
+            &.active::after {
+                width: 100%;
+                transition: 0.5s;
+            }
+        }
+    }
+}
