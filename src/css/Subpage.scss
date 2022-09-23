@@ -20,7 +20,7 @@
         border-bottom: 1px solid #ddd;
         background: #f4f4f4;
         text-align: right;
-        line-height: 30px;
+        line-height: 40px;
     }
 }
 
@@ -90,15 +90,18 @@
         position: relative;
         height: 300px;
         background: url(../../public/assets/images/main_slider01.jpg) no-repeat right top/cover;
-        border-left: 1px solid #369;
+        border-left: 5px solid #369;
         padding: 0 0 100px 0;
 
-    }
-
-    h2 {
-        line-height: 90px;
-        font-size: 50px;
-        font-weight: 800;
+        h2 {
+            line-height: 90px;
+            font-size: 50px;
+            font-weight: 800;
+            text-shadow: 1px 0 3px rgb(255 255 255 /25%);
+            background: linear-gradient(to right top, #0a96ba, #032777, #333333);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
     }
 
     .sub_title {
@@ -146,6 +149,8 @@
 
     }
 }
+
+
 
 .Footer {
     border-top: 1px solid #ddd;

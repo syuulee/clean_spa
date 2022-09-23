@@ -5,7 +5,7 @@ const Article = ({ content, num }) => {
     return (
         <article className='Article'>
             <div className="tit">
-                <strong>{content[num].tit}</strong>&nbsp; &nbsp; / {content[0].tit}
+                <strong>{content[num].tit}</strong>&nbsp;&nbsp; / &nbsp;&nbsp;{content[0].tit}
             </div>
             <div className='bg'>
                 <div className="case">
@@ -22,9 +22,6 @@ const Article = ({ content, num }) => {
                         {content[num].content}
                     </p>
                 </div>
-                {/* <div className="img">
-                    <img src={process.env.PUBLIC_URL + '/assets/images/slogan.png'} alt="" />
-                </div> */}
             </div>
 
             <div className="sub_title">
@@ -37,10 +34,14 @@ const Article = ({ content, num }) => {
             <div className="sub_img">
                 <figure>
                     <img src={process.env.PUBLIC_URL + '/assets/images/main_s011.jpg'} alt="" />
+                </figure>
+                <figure>
                     <img src={process.env.PUBLIC_URL + '/assets/images/main_s012.jpg'} alt="" />
+                </figure>
+                <figure>
                     <img src={process.env.PUBLIC_URL + '/assets/images/main_s013.jpg'} alt="" />
                 </figure>
-            </div>
+            </div >
 
             <div className="sub_title">
                 {content[num].tit}
@@ -54,7 +55,7 @@ const Article = ({ content, num }) => {
                 <li>실리콘 곰팡이, 거미줄, 스티커 제거(추가적인 사항 비용발생</li>
             </ul>
 
-        </article>
+        </article >
     )
 }
 
